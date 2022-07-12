@@ -31,6 +31,18 @@ header{
     /* object-fit: cover; vai cobrir a div, adaptando a imagem na tela */
     opacity: 0.5;
     /* diminui a cor forte da imagem */
+    animation: zoom 2.5s;
+    /* animação da imagem */
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 /* area profissional, 
@@ -67,9 +79,13 @@ posicionamento do elemento pai */
     font-family: 'Mulish:ital', serif;
     font-size: 1.2rem;
     text-transform: uppercase;
+    /* letter-spacing: separamento entre as letras */
+    letter-spacing: .1rem;
     background: #7F7FD5;  /*navegador antigo*/
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);/*navegador suporta o webkit(chrome)*/
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /*padrão de fazer grid*/
     padding: 1rem 2rem;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
